@@ -15,6 +15,7 @@
             background-color: #FEDD03;
             color: #E92769;
             padding: 15px 20px;
+            position: relative;
         }
         .title_container, .capacity_block {
             display: flex;
@@ -23,6 +24,10 @@
         }
         .title_container {
             font-weight: bold;
+            margin-top: 20px;
+        }
+        .title_container:first-child {
+            margin-top: 0px;
         }
         .capacity_block {
             text-align: center;
@@ -70,6 +75,51 @@
         .item_block {
             margin-top: 10px;
             align-items: center;
+        }
+        .footer_wrapper {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        .footer_block {
+            height: 100px;
+            width: 92%;
+            background: #E92769;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .upgrade_title {
+            color:#FEDD03;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .upgrade_symbol {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+
+        }
+        .upgrade_block {
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+        }
+        .upgrade_item {
+            color: #ffffff;
+            font-size: 14px;
+            display: flex;
+            width: 280px;
+            justify-content: space-between;
         }
     </style>
 </head>
@@ -169,6 +219,85 @@
                 <div class="item_price_block">
                     <div>80</div> <!--regular_price-->
                     <div>105</div><!--upsize_price-->
+                </div>
+            </div>
+            <div class="title_container"> 
+                <div class="title_block">
+                    <div class="title_ch">歐雷系列</div>
+                    <div class="title_en">MILKS</div>
+                </div>
+                <div class="capacity_block">
+                    <div class="regular_block">
+                        <div>中杯</div>
+                        <div>REGULAR</div>
+                    </div>
+                    <div class="upsize_block">
+                        <div>大杯</div>
+                        <div>UPSIZE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="item_block">
+                <div class="item_name_block">
+                    <div class="item_name_ch">濃郁義式可可</div>
+                    <div class="item_name_en">CHOCOLATE</div>
+                </div>
+                <div class="item_degree">
+                    HOT/ICED
+                </div>
+                <div class="item_price_block">
+                    <div>80</div> <!--regular_price-->
+                    <div>105</div><!--upsize_price-->
+                </div>
+            </div>
+            <div class="item_block">
+                <div class="item_name_block">
+                    <div class="item_name_ch">抹茶歐蕾</div>
+                    <div class="item_name_en">MATCHA LATTE</div>
+                </div>
+                <div class="item_degree">
+                    HOT/ICED
+                </div>
+                <div class="item_price_block">
+                    <div>80</div> <!--regular_price-->
+                    <div>105</div><!--upsize_price-->
+                </div>
+            </div>
+            <div class="item_block">
+                <div class="item_name_block">
+                    <div class="item_name_ch">抹茶夏威夷果歐蕾</div>
+                    <div class="item_name_en">NUTELLA LATTE</div>
+                </div>
+                <div class="item_degree">
+                    HOT/ICED
+                </div>
+                <div class="item_price_block">
+                    <div>80</div> <!--regular_price-->
+                    <div>105</div><!--upsize_price-->
+                </div>
+            </div>
+        </div>
+        <div class="footer_wrapper">
+            <div class="footer_block">
+                <div class="upgrade_title">
+                    <div class="upgrade_ch">升級</div>
+                    <div class="upgrade_en">UPGRADES</div>
+                </div>
+                <div class="upgrade_symbol">+</div>
+                <div class="upgrade_block">
+                <div class="upgrade_item">
+                    <div class="upgrade_item_name">閃電濃縮 EXTRA EXPRESSO SHOT</div>
+                    <div class="upgrade_item_price">10</div>
+                </div>
+                <div class="upgrade_item">
+                    <div class="upgrade_item_name">OATLY 燕麥奶 OATLY MILK</div>
+                    <div class="upgrade_item_price">20</div>
+                </div>
+                <div class="upgrade_item">
+                    <div class="upgrade_item_name">榛果可可醬 NUTELLA (10g)</div>
+                    <div class="upgrade_item_price">5</div>
+                </div>
                 </div>
             </div>
         </div>
